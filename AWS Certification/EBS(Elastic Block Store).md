@@ -1,11 +1,14 @@
+![[Pasted image 20241205175609.png]]
 
-![[Pasted image 20241126162606.png]]
 
-![[Pasted image 20241126163658.png]]
+![[Pasted image 20241205180043.png]]
+
+
+![[Pasted image 20241205180703.png]]
+
+
+
+### EBS Snapshot Features
+
 
 ### EBS Volume Types
-
-![[Pasted image 20241126183317.png]]
-![[Pasted image 20241126184325.png]]
-
-![[Pasted image 20241126184535.png]]
