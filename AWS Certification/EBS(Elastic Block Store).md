@@ -1,3 +1,15 @@
+##### TOPICS:
+##### 1. EBS VOLUME
+##### 2. DELETE ON TERMINATION
+##### 3. EBS SNAPSHOT
+##### 4. EBS VOLUME TYPES(GENERAL PURPOSE, PROVISION(IOPS))
+##### 5. EBS MULTI ATTACH
+##### 6. EBS ENCRYPTION
+
+
+
+
+
 ![[Pasted image 20241205175609.png]]
 
 
@@ -29,4 +41,14 @@
 ### Summary
 
 ![[Pasted image 20241205200650.png]]
+
+
+![[Pasted image 20241206211050.png]]
+
+
+![[Pasted image 20241206211950.png]]
+
+
+
+![[Pasted image 20241206212035.png]]
 
