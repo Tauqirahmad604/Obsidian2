@@ -1,4 +1,12 @@
-![[Pasted image 20241209161039.png]]
+Topics:
+1. Health Checks
+2. Types of Load balancer
+3. Load Balancer Security Group
+4. Sticky Sessions
+5. Cross Zone Load Balancing
+6. Load Balacancer SSL certificate
+7. SSL SNI(Service Name Indication)
+8. Connection draining
 
 
 ![[Pasted image 20241209161354.png]]
@@ -74,3 +82,9 @@
 
 
 ![[Pasted image 20241210185935.png]]
+
+![[Pasted image 20241210214429.png]]
+
+
+![[Pasted image 20241210214600.png]]
+
