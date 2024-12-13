@@ -69,7 +69,7 @@ Topics:
 
 ![[Pasted image 20241210182207.png]]
 
-
+![[Pasted image 20241210182402.png]]
 
 ![[Pasted image 20241210182402.png]]
 

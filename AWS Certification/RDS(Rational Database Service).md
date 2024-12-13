@@ -1,5 +1,4 @@
 
-1. ElastiCache
 2. RDS proxy
 3. RDS custom
 4. Amazon Aurora
@@ -10,7 +9,8 @@
 9. RDS Backup
 10. Aurora Database Cloning
 11. RDS & Aurora Security
-12. 
+12. ElastiCache 
+13. ElastiCache Security
 
 
 
@@ -87,3 +87,17 @@
 ![[Pasted image 20241212200236.png]]
 
 
+![[Pasted image 20241212210254.png]]
+
+
+![[Pasted image 20241212210628.png]]
+
+
+
+![[Pasted image 20241212221653.png]]
+
+
+
+![[Pasted image 20241212221827.png]]
+
+![[Pasted image 20241212222001.png]]
