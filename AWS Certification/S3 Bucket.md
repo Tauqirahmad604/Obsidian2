@@ -70,6 +70,26 @@
 ![[Pasted image 20241214010001.png]]
 
 
+Without S3 Select or Glacier Select:
+
+- You must download the entire object (which could be gigabytes or terabytes in size) and process it locally or in your application.
+- This can lead to high data transfer costs and increased processing time.
+
+With S3 Select/Glacier Select:
+
+- You can extract only the specific data you need (e.g., certain rows or columns), drastically reducing the amount of data transferred and processed.
+
 
 ![[Pasted image 20241214010302.png]]
 
+
+
+### **With Batch Operations**
+
+You need to update the access permissions for 10 million objects in an S3 bucket. Using Batch Operations, you can automate this task with a single job submission, and AWS handles the rest.
+
+---
+
+### **Without Batch Operations**
+
+You would need to write a custom script or manually update permissions object-by-object, which could take hours or days depending on the scale and compute resources.
