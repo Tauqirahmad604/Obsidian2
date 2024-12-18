@@ -6,3 +6,4 @@ i.  **Credentials Report**
    
 ii.  **Access Advisor**
    It shows the service permissions granted to a user and when those services were last accessed. You can use this information to revise your policies.
+``
