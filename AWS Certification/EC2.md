@@ -2,7 +2,6 @@
 
 #### User Data Key Points
 
-[](https://github.com/alozano-77/AWS-SAA-C02-Course/blob/master/10-EC2-Advanced/notes.md#user-data-key-points)
 
 EC2 doesn't know what the user data contains, it's just a block of data.
 
@@ -51,3 +50,7 @@ If we create a security group and attach it to an EC2 instance, then create anot
 ![[Pasted image 20241031212241.png]]
 
 
+
+/project/git/mojo-keystone
+tail -f /opt/bitnami/apache2/logs/test-app-error.log
+cat /opt/bitnami/apache2/conf/extra/httpd-vhosts.conf

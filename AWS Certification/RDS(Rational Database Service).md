@@ -53,6 +53,7 @@
 ![[Pasted image 20241211190112.png]]
 
 
+
 ![[Pasted image 20241211191158.png]]
 
 
@@ -107,8 +108,8 @@ Cloning refers to creating an exact, one-time copy of an existing database or da
 
 ![[Pasted image 20241212191742.png]]
 
-
 ![[Pasted image 20241212192314.png]]
+
 
 
 ![[Pasted image 20241212200110.png]]

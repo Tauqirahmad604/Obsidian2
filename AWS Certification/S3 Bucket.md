@@ -4,6 +4,7 @@
 3. S3 - Batch Replication
 4. S3 - Requester Pay
 5. S3 - Baseline Performence
+6. S3 Select & Glacier Select
 
 
 ![[Pasted image 20241213215044.png]]

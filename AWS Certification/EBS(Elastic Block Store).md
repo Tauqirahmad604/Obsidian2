@@ -25,6 +25,13 @@
 ![[Pasted image 20241205181801.png]]
 
 
+**Incremental Snapshots**: Archiving stores a **full copy** of the snapshot, even if the original snapshot was incremental. This makes the archived version much larger.
+
+- Example: Incremental snapshots may occupy only 10 GB in the standard tier, but archiving them could result in a full 100 GB snapshot being stored, leading to higher costs.
+
+
+
+
 ###   EBS Volume Types
 
 ![[Pasted image 20241205194819.png]]
@@ -51,4 +58,5 @@
 
 
 ![[Pasted image 20241206212035.png]]
+
 

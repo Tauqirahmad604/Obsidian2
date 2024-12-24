@@ -41,7 +41,20 @@ Topics:
 ![[Pasted image 20241210173440.png]]
 
 
+### What is it?
+
+**AWS Gateway Load Balancer** is a service that helps you easily add and manage third-party tools (like security devices, firewalls, or monitoring tools) in your network. These tools inspect and process your network traffic.
+
+### Key Idea:
+
+Imagine you have a **cloud network** (like a private cloud environment in AWS) where data is coming in and out (from websites, apps, etc.). Sometimes, you need to check or filter that data before it goes to its destination—like making sure it's secure or checking for any problems.
+
+**Gateway Load Balancer** helps you do that by automatically sending this traffic to **special tools** (called "virtual appliances") that process the traffic and then send it back to your network.
+
+
 ![[Pasted image 20241210173510.png]]
+
+
 
 
 ![[Pasted image 20241210174041.png]]
@@ -52,7 +65,11 @@ Topics:
 
 
 
+
+
 ![[Pasted image 20241210175804.png]]
+
+
 
 
 ![[Pasted image 20241210175925.png]]
