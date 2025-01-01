@@ -86,7 +86,16 @@ Imagine you have a **cloud network** (like a private cloud environment in AWS) w
 
 ![[Pasted image 20241210182207.png]]
 
+
+- When connection draining is enabled, the load balancer stops sending new traffic to the deregistering instance but continues to route existing connections to it.
+- The instance is allowed to complete its in-flight requests within a specified timeout period, avoiding abrupt disconnections.
+- Once all in-flight requests are processed, or the timeout period is reached, the instance is deregistered or stopped.
+
+
+
 ![[Pasted image 20241210182402.png]]
+
+
 
 ![[Pasted image 20241210182402.png]]
 

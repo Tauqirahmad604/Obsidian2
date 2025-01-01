@@ -5,17 +5,21 @@
 
 
 
+
 ![[Pasted image 20241214013110.png]]
+
 
 
 
 ![[Pasted image 20241214013240.png]]
 
 
+
 - AWS KMS has limits on the number of requests you can make per second, which could be a concern for high-throughput workloads. The default limits are:
     - **5,000 requests per second** for encryption and decryption operations.
     - **100 requests per second** for other operations like creating or disabling keys.
 - You can request an increase in these limits, but it may not always be suitable for extremely high-volume applications.
+
 
 
 
@@ -30,11 +34,12 @@
 ![[Pasted image 20241214014406.png]]
 
 
+
 ![[Pasted image 20241214014503.png]]
 
 
-![[Pasted image 20241216232215.png]]
 
+![[Pasted image 20241216232215.png]]
 
 
 
@@ -54,10 +59,13 @@ When you store data in **Amazon S3** (like images, videos, or files), and you wa
 For example, if you have a **website hosted at `www.mywebsite.com`** and your images are stored in **S3**, you need CORS to allow `www.mywebsite.com` to access those images.
 
 
+
 ![[Pasted image 20241216232658.png]]
 
 
+
 ![[Pasted image 20241216232836.png]]
+
 
 
 ![[Pasted image 20241216233918.png]]
@@ -72,17 +80,19 @@ For example, if you have a **website hosted at `www.mywebsite.com`** and your im
 
 
 
-
 ![[Pasted image 20241216234934.png]]
 
 
 
 ![[Pasted image 20241216235140.png]]
 
+
+
 **Amazon S3 Glacier Lock** is a feature that allows you to **lock your data** in Amazon S3 Glacier Vaults using a **"write-once-read-many" (WORM)** model. This ensures that data cannot be **deleted** or **modified** for a specified period of time, which is useful for regulatory compliance, data retention, and archiving purposes.
 
 
 ![[Pasted image 20241216235444.png]]
+
 
 
 ## **Governance Mode**

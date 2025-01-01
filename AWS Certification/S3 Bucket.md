@@ -94,3 +94,10 @@ You need to update the access permissions for 10 million objects in an S3 bucket
 ### **Without Batch Operations**
 
 You would need to write a custom script or manually update permissions object-by-object, which could take hours or days depending on the scale and compute resources.
+
+
+
+![[Pasted image 20241231234947.png]]
+
+
+![[Pasted image 20241231235346.png]]

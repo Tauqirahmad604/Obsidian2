@@ -19,6 +19,7 @@ The contents are only excecuted once at launch.
 
 ![[Pasted image 20241031190754.png]]
 
+
 #### General Purpose
 
 ![[Pasted image 20241031191104.png]]
@@ -51,6 +52,3 @@ If we create a security group and attach it to an EC2 instance, then create anot
 
 
 
-/project/git/mojo-keystone
-tail -f /opt/bitnami/apache2/logs/test-app-error.log
-cat /opt/bitnami/apache2/conf/extra/httpd-vhosts.conf

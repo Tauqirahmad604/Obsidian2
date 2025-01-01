@@ -1,3 +1,7 @@
+1. AWS Organizations
+2. Organiztional Units
+3. IAM Conditions
+
 ### 1. **IAM security tools** 
  
 i.  **Credentials Report**
@@ -6,3 +10,17 @@ i.  **Credentials Report**
    
 ii.  **Access Advisor**
    It shows the service permissions granted to a user and when those services were last accessed. You can use this information to revise your policies.
+
+
+![[Pasted image 20250101175707.png]]
+
+
+![[Pasted image 20250101181329.png]]
+
+
+
+![[Pasted image 20250101191018.png]]
+
+
+
+![[Pasted image 20250101191927.png]]

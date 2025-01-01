@@ -122,6 +122,27 @@ DynamoDB Streams is like a "log" that tracks changes to your data in a DynamoDB 
 ![[Pasted image 20241220012009.png]]
 
 
+# AWS VPC Endpoint Services vs AWS Gateway VPC Endpoints
+
+
+In AWS, both VPC Endpoint Services and Gateway VPC Endpoints provide connectivity between resources within your Virtual Private Cloud (VPC) and AWS services, but they serve different purposes and have different use cases:
+
+1. VPC Endpoint Service:
+
+- VPC Endpoint Services allow AWS services hosted in a VPC to be accessed by resources in other VPCs or from the internet (depending on your configuration).
+- You create a VPC Endpoint Service to expose your own service or application within your VPC to other VPCs without exposing it to the public internet.
+- This is useful when you want to build a service that other AWS accounts or VPCs can access securely without requiring public IP addresses or traversing the internet.
+- Examples of services that can be exposed through VPC Endpoint Services include AWS PrivateLink, AWS Marketplace, and custom services running within your VPC.
+
+2. Gateway VPC Endpoint:
+
+- Gateway VPC Endpoints provide private connectivity to AWS services such as Amazon S3 and DynamoDB from within your VPC.
+- They act as a gateway that routes traffic from your VPC to the AWS service over the AWS private network, bypassing the internet.
+- Gateway VPC Endpoints are useful when you need to access AWS services privately from your VPC without going over the internet, improving security and reducing data transfer costs.
+- They currently support Amazon S3 and DynamoDB, allowing you to access these services without using public IP addresses or going through a NAT gateway.
+
+In summary, VPC Endpoint Services are used to expose your own services or applications securely to other VPCs, while Gateway VPC Endpoints provide private connectivity to specific AWS services from within your VPC. The choice between the two depends on whether you need to expose your own service or access AWS services privately within your VPC.
+
 
 
 ![[Pasted image 20241220012123.png]]
