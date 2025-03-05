@@ -19,10 +19,6 @@
 ![[Pasted image 20241219203558.png]]
 
 
-
-![[Pasted image 20241219203723.png]]
-
-
 ![[Pasted image 20241219204427.png]]
 
 
@@ -42,7 +38,7 @@ In AWS Lambda, **concurrency** refers to the number of function instances that a
 1. When a Lambda function is triggered, AWS Lambda creates an instance of the function to handle the request.
 2. If multiple requests arrive at the same time, Lambda will spin up additional instances to handle each request concurrently.
 3. The **concurrency limit** determines how many such instances can run at the same time.
-
+4. By default, Lambda provides your account with a total concurrency limit of **1,000 concurrent executions** across all functions in an AWS Region.
 
 ![[Pasted image 20241219225934.png]]
 
@@ -60,6 +56,7 @@ In AWS Lambda, **concurrency** refers to the number of function instances that a
 
 
 ![[Pasted image 20241219235120.png]]
+
 
 
 ![[Pasted image 20241220003947.png]]
@@ -152,3 +149,6 @@ In summary, VPC Endpoint Services are used to expose your own services or applic
 
 
 ![[Pasted image 20241220014345.png]]
+
+
+

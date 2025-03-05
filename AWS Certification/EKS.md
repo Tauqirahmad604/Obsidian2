@@ -14,9 +14,6 @@
 
 
 
-
-
-
 #### Create Cluster in EKS Policies
 ###### Policies for ClusetRole
 ![[Pasted image 20241223215116.png]]

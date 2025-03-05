@@ -1,6 +1,7 @@
 1. AWS Organizations
 2. Organiztional Units
 3. IAM Conditions
+4. IAM Identity Center(SSO)
 
 ### 1. **IAM security tools** 
  
@@ -24,3 +25,6 @@ ii.  **Access Advisor**
 
 
 ![[Pasted image 20250101191927.png]]
+
+
+![[Pasted image 20250101203517.png]]

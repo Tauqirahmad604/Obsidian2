@@ -4,7 +4,10 @@
 3. S3 - Batch Replication
 4. S3 - Requester Pay
 5. S3 - Baseline Performence
-6. S3 Select & Glacier Select
+6. S3 - Select & Glacier Select
+7. S3 - Transfer Acceleration
+8. S3 - Access Logs
+9. S3 - Inventry
 
 
 ![[Pasted image 20241213215044.png]]
@@ -100,4 +103,10 @@ You would need to write a custom script or manually update permissions object-by
 ![[Pasted image 20241231234947.png]]
 
 
+**S3 Transfer Acceleration** is a feature in Amazon S3 that enables faster data transfers to and from S3 buckets over long distances. It leverages Amazon CloudFront’s globally distributed edge locations to route data through optimized network paths, resulting in reduced latency and improved transfer speeds, especially for large objects or geographically distant clients.
+
+
+
 ![[Pasted image 20241231235346.png]]
+
+

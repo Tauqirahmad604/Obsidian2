@@ -1,3 +1,11 @@
+1. **Task Placement Stratigies**
+2. **Constrains**
+
+
+- **Task**: A running instance of a containerized application in AWS ECS.
+- **Task Definition**: A blueprint that defines how a task should run (container image, CPU, memory, networking, etc.).
+- **Service**: Manages and maintains a specified number of running tasks, ensuring availability and load balancing.
+
 ![[Pasted image 20241218001022.png]]
 
 
@@ -29,7 +37,7 @@ Yes, when you create an ECS cluster and choose the **"EC2 Linux + Networking"** 
 
 
 ![[Pasted image 20241218193101.png]]
-
+ 
 
 
 ![[Pasted image 20241218193238.png]]
@@ -38,3 +46,41 @@ Yes, when you create an ECS cluster and choose the **"EC2 Linux + Networking"** 
 ![[Pasted image 20241218193455.png]]
 
 
+
+1. You need to deploy a docker application on ecs but want to minimize cost by sharing instances between multiple tasks. Which launch type you will use and why?
+
+![[Pasted image 20250304191220.png]]
+
+
+1. You are running a service on ECS fargate and your application is facing high network latencty. How would you troubleshot and optimize network performance?
+   
+   ![[Pasted image 20250304191648.png]]
+
+
+2. What Are VPC Flow Logs?
+
+3. You need to deploy a service on ECS and ensure zero downtime during deployments? How would you configure this?
+
+![[Pasted image 20250304192426.png]]
+
+
+1. You are tasked with scaling ECS servie up and down automatically? How would you do that?
+
+![[Pasted image 20250304193057.png]]
+
+
+1. You are running an ECS service with Fargate and you want to run that specific task run on a specific period how would you set that?
+
+![[Pasted image 20250304193922.png]]
+
+
+1. How does ECS handle container placement within a cluster?
+
+![[Pasted image 20250304195224.png]]
+
+
+### **How Does Fargate Handle Tasks?**
+
+- **Each ECS task gets its own Fargate instance.**
+- There is **no shared EC2 host** like in EC2 launch mode.
+- Each task is **fully isolated** with its own **CPU, memory, and networking (ENI)**.

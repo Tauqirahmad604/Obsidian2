@@ -1,17 +1,20 @@
 
-2. RDS proxy
-3. RDS custom
-4. Amazon Aurora
-5. Proxy fleet - Aurora
-6. Aurora - Custom Endpoints
-7. Aurora - Serverless
-8. Global Aurora
-9. RDS Backup
-10. Aurora Database Cloning
+1. RDS proxy(connection pooling)
+2. RDS custom
+3. Amazon Aurora
+4. Proxy fleet - Aurora
+5. Aurora - Custom Endpoints
+6. Aurora - Serverless
+7. Global Aurora
+8. RDS Backup
+9. Aurora Database Cloning
+10. Aurora Backtraking
 11. RDS & Aurora Security
 12. ElastiCache 
 13. ElastiCache Security
 14. ElasticCache Session Store
+15. Option group and Parameter group
+16. AWS Database Migration Service (AWS DMS)
 
 
 
@@ -62,9 +65,48 @@
 
 ![[Pasted image 20241212001301.png]]
 
+### **Amazon RDS vs. Custom RDS (Self-Managed Database on EC2)**
+
+Amazon **RDS (Relational Database Service)** is a **fully managed** database service, whereas **Custom RDS** refers to **self-managing a database on an EC2 instance**. Here’s a detailed comparison:
+
+---
+
+## **1️⃣ Overview**
+
+| Feature                    | **Amazon RDS (Managed Service)**                                | **Custom RDS (Self-Managed on EC2)**                        |
+| -------------------------- | --------------------------------------------------------------- | ----------------------------------------------------------- |
+| **Management**             | Fully managed by AWS                                            | You manage everything                                       |
+| **Database Setup**         | AWS handles provisioning, patching, and updates                 | You install, configure, and maintain the DB manually        |
+| **Backup & Recovery**      | Automated backups, snapshots, and point-in-time recovery (PITR) | Manual setup for backups & disaster recovery                |
+| **Scaling**                | Vertical & horizontal scaling via AWS                           | Manual scaling (resize EC2, configure replication)          |
+| **High Availability (HA)** | Built-in Multi-AZ support                                       | You must configure HA (e.g., clustering, replication)       |
+| **Monitoring & Logs**      | AWS CloudWatch, Performance Insights                            | Requires custom monitoring (e.g., Prometheus, Grafana)      |
+| **Security**               | Encryption, IAM authentication, AWS Secrets Manager             | Manual setup (SSL, IAM, Firewalls)                          |
+| **Database Engines**       | MySQL, PostgreSQL, SQL Server, MariaDB, Oracle, Aurora          | Any database (including MongoDB, Cassandra, etc.)           |
+| **Maintenance**            | AWS applies patches and updates                                 | You must handle updates manually                            |
+| **Customization**          | Limited OS & DB tuning options                                  | Full control over OS, DB configurations, and versions       |
+| **Cost**                   | Pay-as-you-go pricing (storage + compute)                       | EC2 pricing (can be cheaper but requires management effort) |
 
 
 ![[Pasted image 20241212003236.png]]
+
+### **What is Proxy Fleet in Amazon Aurora?**
+
+#### **📌 Definition:**
+
+A **Proxy Fleet** in **Amazon Aurora** refers to **Aurora's built-in connection pooling mechanism** that manages and scales database connections efficiently. It acts like **Amazon RDS Proxy** but is **fully integrated into Aurora**, reducing the need for an external proxy service.
+
+---
+
+### **🔹 Why is Proxy Fleet Needed?**
+
+Traditional database connections are **expensive** because each connection consumes memory and CPU. **Applications that frequently open and close connections** (e.g., web apps, microservices, AWS Lambda functions) create **connection overload**.
+
+💡 **Aurora's Proxy Fleet optimizes connection handling** by:
+
+- Pooling and reusing database connections.
+- Automatically managing connections without manual tuning.
+- Reducing overhead and improving query performance.
 
 
 ![[Pasted image 20241212005642.png]]
@@ -89,12 +131,27 @@
 ![[Pasted image 20241212013541.png]]
 
 
+**Amazon Aurora Global Database** is a **highly available, globally distributed database** that allows you to deploy **a single Aurora database across multiple AWS Regions**. It provides **low-latency global reads** and **fast cross-region disaster recovery**.
+
+## **How Aurora Global Database Works?**
+
+1. **Primary Region (Leader)**
+    - Handles **read and write** operations.
+    - Syncs data asynchronously to read-only **secondary regions**.
+2. **Secondary Regions (Followers)**
+    - Handle **read-only queries** to reduce latency for global users.
+    - Can be **promoted** to primary in case of failover.
+3. **Replication Mechanism**
+    - Aurora **Global Replication** is faster than standard MySQL/PostgreSQL replication.
+    - Uses **dedicated infrastructure** for replication to **avoid affecting primary DB performance**.
+
 
 ![[Pasted image 20241212184107.png]]
 
 ![[Pasted image 20241212184927.png]]
 
 ![[Pasted image 20241212190347.png]]
+
 
 ![[Pasted image 20241212191014.png]]
 
@@ -135,8 +192,12 @@ Cloning refers to creating an exact, one-time copy of an existing database or da
 
 
 
+![[Pasted image 20250305203452.png]]
+
+
 
 ![[Pasted image 20241231233920.png]]
+
 
 
 ![[Pasted image 20241231234220.png]]
