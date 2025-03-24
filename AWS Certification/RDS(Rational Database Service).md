@@ -25,6 +25,7 @@
 ![[Pasted image 20241211183004.png]]
 
 
+
 ![[Pasted image 20241211184234.png]]
 
 
@@ -58,6 +59,7 @@
 
 
 ![[Pasted image 20241211191158.png]]
+
 
 
 ![[Pasted image 20241211193439.png]]
@@ -162,6 +164,18 @@ Replication refers to the continuous process of copying data from one database (
 ### **Cloning**
 
 Cloning refers to creating an exact, one-time copy of an existing database or dataset at a specific point in time. It is not continuous like replication.
+
+
+
+## **Aurora Backtracking – Instant Point-in-Time Recovery**
+
+### **📌 What is Aurora Backtracking?**
+
+Aurora **Backtracking** allows you to **rewind** your Aurora **MySQL database** to a previous point **without restoring from a backup**. Instead of restoring from a snapshot, Aurora keeps track of changes and allows you to "go back in time" almost instantly.
+
+💡 **Think of it like an "Undo" button for your database!**
+
+
 
 ![[Pasted image 20241212191742.png]]
 

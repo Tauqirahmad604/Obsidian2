@@ -32,6 +32,26 @@
 
 In AWS Lambda, **concurrency** refers to the number of function instances that are executing at the same time. Each instance of a Lambda function can handle one request at a time, so concurrency determines how many requests can be processed simultaneously.
 
+## **What is Concurrency in AWS Lambda?**
+
+💡 **Concurrency** in Lambda refers to the number of **simultaneous executions** of your function at any given time.
+
+### **🔹 Types of Concurrency in AWS Lambda**
+
+AWS Lambda supports three types of concurrency:
+
+|**Type**|**Description**|
+|---|---|
+|**Unreserved Concurrency**|Default, shared across all functions in your account.|
+|**Reserved Concurrency**|Limits concurrency for a specific function (prevents overuse).|
+|**Provisioned Concurrency**|Keeps functions "warm" for predictable latency.|
+
+---
+
+### **🔹 Example of Concurrency in Lambda**
+
+- If **1000 requests** arrive at the same time, and your function takes **1 second** to execute, Lambda will run **1000 instances** simultaneously.
+- If you set **reserved concurrency = 100**, then only **100 requests** will be processed at a time. The rest **will be throttled** (fail or retry).
 
 ### **How Concurrency Works in Lambda:**
 
@@ -39,6 +59,7 @@ In AWS Lambda, **concurrency** refers to the number of function instances that a
 2. If multiple requests arrive at the same time, Lambda will spin up additional instances to handle each request concurrently.
 3. The **concurrency limit** determines how many such instances can run at the same time.
 4. By default, Lambda provides your account with a total concurrency limit of **1,000 concurrent executions** across all functions in an AWS Region.
+
 
 ![[Pasted image 20241219225934.png]]
 

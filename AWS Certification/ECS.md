@@ -84,3 +84,11 @@ Yes, when you create an ECS cluster and choose the **"EC2 Linux + Networking"** 
 - **Each ECS task gets its own Fargate instance.**
 - There is **no shared EC2 host** like in EC2 launch mode.
 - Each task is **fully isolated** with its own **CPU, memory, and networking (ENI)**.
+
+
+
+1. How you can do path based routing in ECS?
+2. How to make secure communication between ECS services?
+3. How we can add variables in ECS via secret manager?
+4. What is diff bw vpc CIDR and subnet CIDR?
+5. How to 

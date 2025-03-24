@@ -116,7 +116,4 @@ For example, if you have a **website hosted at `www.mywebsite.com`** and your im
 
 
 
-
-
-
-
+An **AWS S3 Access Point** is a **customized endpoint** that you can create to **manage access** to an S3 bucket in a **more controlled and scalable way**. Instead of directly using a bucket name, you create **multiple access points** with unique policies to control how different applications or teams access the same bucket.
