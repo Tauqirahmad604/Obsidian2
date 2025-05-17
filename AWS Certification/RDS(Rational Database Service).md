@@ -15,6 +15,7 @@
 14. ElasticCache Session Store
 15. Option group and Parameter group
 16. AWS Database Migration Service (AWS DMS)
+17. Kerberose authentication
 
 
 
@@ -215,3 +216,50 @@ Aurora **Backtracking** allows you to **rewind** your Aurora **MySQL database** 
 
 
 ![[Pasted image 20241231234220.png]]
+
+
+
+## How RDS Failover Works (Without RDS Proxy)
+
+### 1. **Multi-AZ Deployment Setup**
+
+- When you enable **Multi-AZ** during RDS setup, AWS automatically creates a **standby replica** of your primary DB instance in a different **Availability Zone (AZ)**.
+    
+- The standby is **not readable or writable** — it's kept **in sync** with the primary using synchronous replication.
+    
+
+---
+
+### 2. **What Triggers Failover?**
+
+AWS automatically initiates failover in cases such as:
+
+- Primary DB instance crash
+    
+- Hardware failure
+    
+- AZ outage
+    
+- Manual reboot with failover
+    
+- OS patching or maintenance events
+    
+
+---
+
+### 3. **What Happens During Failover?**
+
+- AWS **promotes the standby replica** to become the **new primary**.
+    
+- A new **standby is automatically created** in another AZ (if Multi-AZ is still enabled).
+    
+- **DNS endpoint remains the same** (e.g., `mydb.xxxxxxxxx.us-east-1.rds.amazonaws.com`), but it now points to the **new primary**.
+    
+
+---
+
+### 4. **Client Connection Behavior**
+
+- Because the endpoint stays the same, the app can reconnect **without needing to change the connection string**.
+    
+- However, the **application must handle connection interruptions** gracefully — failover usually takes **30–60 seconds**.

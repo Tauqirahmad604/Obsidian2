@@ -29,7 +29,16 @@
 
 - Example: Incremental snapshots may occupy only 10 GB in the standard tier, but archiving them could result in a full 100 GB snapshot being stored, leading to higher costs.
 
+## How It Works:
 
+1. 📦 You take your **first snapshot** → it's a **full copy** of the entire EBS volume.
+    
+2. 🧩 You take a **second snapshot** → only the **blocks that changed** since the first snapshot are saved.
+    
+3. 📅 You take more snapshots → each one only saves the **changed blocks** since the previous snapshot.
+    
+
+So the size and duration of snapshots **decrease significantly** after the first full snapshot.
 
 
 ###   EBS Volume Types

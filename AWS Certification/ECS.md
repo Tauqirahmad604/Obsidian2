@@ -1,5 +1,9 @@
 1. **Task Placement Stratigies**
 2. **Constrains**
+3. ECS Service Discovery
+4. ECS Service Connect
+5. AWS Cloud Map Service Registry
+6. Roll Back in ECS
 
 
 - **Task**: A running instance of a containerized application in AWS ECS.
@@ -91,4 +95,9 @@ Yes, when you create an ECS cluster and choose the **"EC2 Linux + Networking"** 
 2. How to make secure communication between ECS services?
 3. How we can add variables in ECS via secret manager?
 4. What is diff bw vpc CIDR and subnet CIDR?
-5. How to 
+5. I have set up my ecs with fargate now I want to add my domain tauqir.com in it and a also want to enable SSL on my domain how can I achieve this.
+6. If I have 2 container running in ecs fargate and they are not connecting with other how can I troubleshoot this.
+7. If I have 2 container running in ecs fargate and they are not connecting with other how can I troubleshoot this.
+
+
+![[Pasted image 20250517043929.png]]

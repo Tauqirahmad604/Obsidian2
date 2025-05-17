@@ -3,7 +3,17 @@
 2. Lamda Snapstart
 3. DynamoDB Accelrator (DAX)
 4. DynamoDB Stream
-
+5. how to increase cpu in lamda
+6. By default lamda is not created in vpc
+7. What is maximum size code we can upload to lamda?if it is more than that size how we can manage
+8. How do you reduce size and improve performance of your Lambda deployment package?
+9. What is Lambda’s execution model – how does it scale?
+10. What are maximum layers we can add in lamda function?
+11. For how many times lamda can retry?
+12. How to set Function URL for lamda?
+13. Asynchronous invocation and Synchronous invocation in lamda.
+14. Lamda Components
+15. What is Lamda@Edge
 
 
 ![[Pasted image 20241219195503.png]]
