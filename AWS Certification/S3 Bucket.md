@@ -8,6 +8,12 @@
 7. S3 - Transfer Acceleration
 8. S3 - Access Logs
 9. S3 - Inventry
+10. If I need to set up cross region replicaton which permissions do we need?
+11. I want to setup ssl in transit on my s3 bucket how can I do this?
+12. How we can specify that our bucket can only be accessed through the access points?
+13. What is bucket policy access point?
+14. How can we check transfer accelration speed of our s3.
+15. When I delete any version in s3 will it be deleted?
 
 
 ![[Pasted image 20241213215044.png]]

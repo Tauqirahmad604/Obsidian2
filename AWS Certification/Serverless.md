@@ -14,6 +14,10 @@
 13. Asynchronous invocation and Synchronous invocation in lamda.
 14. Lamda Components
 15. What is Lamda@Edge
+16. What is Alias in Lamda.
+17. Destination in Lamda
+18. Lamda Handler
+19. **Layers in AWS Lambda** are a way to **package and share code or dependencies** across multiple Lambda functions.
 
 
 ![[Pasted image 20241219195503.png]]

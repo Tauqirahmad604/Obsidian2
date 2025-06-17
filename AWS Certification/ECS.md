@@ -1,9 +1,12 @@
-1. **Task Placement Stratigies**
+1. **Task Placement Stratigies**(AZ balanced Spread, AZ balanced binpack)
 2. **Constrains**
 3. ECS Service Discovery
 4. ECS Service Connect
 5. AWS Cloud Map Service Registry
 6. Roll Back in ECS
+7. Fargate tasks **use `awsvpc` network mode by default**, so each task gets its **own ENI and private IP**.
+8. EC2 use bridge network by default
+9. Diff bw service atuoscaling and cluster autoscaling
 
 
 - **Task**: A running instance of a containerized application in AWS ECS.
@@ -97,7 +100,18 @@ Yes, when you create an ECS cluster and choose the **"EC2 Linux + Networking"** 
 4. What is diff bw vpc CIDR and subnet CIDR?
 5. I have set up my ecs with fargate now I want to add my domain tauqir.com in it and a also want to enable SSL on my domain how can I achieve this.
 6. If I have 2 container running in ecs fargate and they are not connecting with other how can I troubleshoot this.
-7. If I have 2 container running in ecs fargate and they are not connecting with other how can I troubleshoot this.
 
 
 ![[Pasted image 20250517043929.png]]
+
+
+
+## Does each ECS task get its own IP?
+
+### It depends on the **network mode**:
+
+|Network Mode|Task IP Address Behavior|
+|---|---|
+|**bridge (default for EC2)**|Tasks share the EC2 instance’s IP; containers get private ports on the instance. No unique IP per task.|
+|**host**|Tasks use the EC2 instance’s network stack and IP. No unique IP per task.|
+|**awsvpc**|Each task gets its own **Elastic Network Interface (ENI)** and **private IP**. So **yes**, each task has its **own IP address** on the VPC.|

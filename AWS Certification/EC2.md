@@ -1,3 +1,9 @@
+
+1. I have 2 users dev and prod in my aws and I only want to dev user to see dev ec2 instance and prod user to only see prod instances how can I achieve this?
+2. How can I automate ebs volume snapshots?
+3. I want to create a user in ubuntu and give him readonly permissions to all resources in my server how can I achieve this?also you want him that he can not run specific commands?
+4. Docker container have running kernel as OS on which container runs.
+
 ![[Pasted image 20241031180720.png]]
 
 #### User Data Key Points

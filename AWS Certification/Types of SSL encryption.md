@@ -22,7 +22,7 @@
 
 
 
-### **b. SSL Termination**(SSL offloading)
+### **b. SSL Termination** (SSL offloading)
 
 **What it is:**
 

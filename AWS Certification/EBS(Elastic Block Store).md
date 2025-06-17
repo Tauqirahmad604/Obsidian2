@@ -70,3 +70,44 @@ So the size and duration of snapshots **decrease significantly** after the first
 ![[Pasted image 20241206212035.png]]
 
 
+
+## Encryption at Rest vs Encryption in Transit
+
+When securing cloud-based applications and data, it's important to understand the difference between **encryption at rest** and **encryption in transit**.
+
+### ✅ Encryption at Rest
+
+Encryption at rest refers to **protecting data while it is stored** on disk or in persistent storage. This ensures that if unauthorized access occurs (e.g., via stolen backups or compromised storage), the data remains unreadable.
+
+**Examples:**
+
+- Encrypted data stored in Amazon S3, RDS, or EBS volumes.
+    
+- AWS KMS used to manage and control encryption keys.
+    
+
+**Benefits:**
+
+- Protects data from unauthorized access on physical media.
+    
+- Helps comply with security standards like GDPR, HIPAA, and PCI-DSS.
+    
+
+### ✅ Encryption in Transit
+
+Encryption in transit protects data **while it is being transmitted** across networks. This ensures that any data moving between services, applications, or users is encrypted and cannot be intercepted or altered during transmission.
+
+**Examples:**
+
+- HTTPS communication using TLS (e.g., between a web client and a load balancer).
+    
+- TLS-enabled connections to databases like Amazon RDS or Aurora.
+    
+- Secure service-to-service communication within a VPC.
+    
+
+**Benefits:**
+
+- Prevents data eavesdropping and man-in-the-middle attacks.
+    
+- Ensures confidentiality and integrity of data during transmission.

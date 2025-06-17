@@ -1,60 +1,31 @@
 
-![[Pasted image 20250114000246.png]]
+1. Key Clock
+2. Velero
+3. When you run kubectl apply command what happens in the background?
+4. How can we take backup of our etcd?
+5. By default can we run components on master plane it has taint and toleration?
+6. What Does `usermod` Do?
+7. How you can give access you deployment to the any service running on aws.(using addon)
+8. EKS Pod Identity and IRSA
+9. Metrics Server
+10. 
+
+
+If we do not want to attach default service account to our pod.
 
 
 
-![[Pasted image 20250114004924.png]]
+![[Pasted image 20250529202308.png]]
 
 
-
-![[Pasted image 20250114005251.png]]
-
-
-
-![[Pasted image 20250114012742.png]]
-
-
-
-![[Pasted image 20250114012806.png]]
-
-
-
-![[Pasted image 20250114013028.png]]
-
-
-![[Pasted image 20250114013933.png]]
-
-
-**Controller Manager**
-
-
-![[Pasted image 20250114014354.png]]
-
-
-![[Pasted image 20250114014722.png]]
-
-
-![[Pasted image 20250114014819.png]]
-
-
-
-![[Pasted image 20250114014928.png]]
-
-
-
-
-kubectl exec -it php-7f47db95f7-fs969 -n pimcore -- bash -c "rm -rf /tmp && mkdir -p /tmp && chmod 777 /tmp"
-
-kubectl exec -it php-7f47db95f7-fs969 -n pimcore -- bash -c "mkdir -p /var/tmp && chmod 777 /var/tmp && TMPDIR=/var/tmp apt update && TMPDIR=/var/tmp apt install -y php-imagick"
-
-
-kubectl exec -it php-7f47db95f7-fs969 -n pimcore -- bash -c "cd /var/www/html && vendor/bin/pimcore-install --mysql-host-socket=pimcore-db --mysql-username=pimcore --mysql-password=pimcore --mysql-database=pimcore"
-
-
-kubectl exec -it php-7f47db95f7-fs969 -n pimcore -- bash -c "mkdir -p /var/www/html/var/cache/dev && chown -R www-data:www-data /var/www/html/var && chmod -R 775 /var/www/html/var"
-
-
-Now listen to my problem carefully I am running pod of pimcore but the issue is that I have to mannually copy my entire code in the running pod and manually after going inside the pod I need to run
+1. When you run kubectl apply command what happens in the background?
+2. How can we take backup of our etcd?
+3. By default can we run components on master plane it has taint and toleration?
+4. What Does `usermod` Do?
+5. How you can give access you deployment to the any service running on aws.(using addon)
+6. EKS Pod Identity and IRSA
+7. Metrics Server
+8. 
 
 
 

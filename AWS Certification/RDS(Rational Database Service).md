@@ -16,6 +16,7 @@
 15. Option group and Parameter group
 16. AWS Database Migration Service (AWS DMS)
 17. Kerberose authentication
+18. RPO(Recovery Point Objective) and RTO(Recovery Time Objective)
 
 
 

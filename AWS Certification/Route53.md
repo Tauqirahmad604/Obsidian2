@@ -4,7 +4,6 @@
 3. CNAME v ALIAS
 4. Route53 - Routing Policing
 5. How to migrate domain from one provider to other
-6. 
 
 
 

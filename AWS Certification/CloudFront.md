@@ -1,5 +1,7 @@
 
 1. CloudFront Geo Restriction
+2. CloudFront Invalidation
+3. How to make ec2 only access with cloudfront?
 
 
 ![[Pasted image 20241217001548.png]]

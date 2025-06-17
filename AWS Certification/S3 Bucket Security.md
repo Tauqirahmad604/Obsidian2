@@ -115,5 +115,15 @@ For example, if you have a **website hosted at `www.mywebsite.com`** and your im
 ![[Pasted image 20241217000556.png]]
 
 
+![[Pasted image 20250528145006.png]]
+
+
+![[Pasted image 20250528145035.png]]
+
+
+ ![[Pasted image 20250528145637.png]]
+
+1. Create a policy in which define that bucket can be accessable only from the access points.
+2. Create access point and give the users arn to which you wants to give permissions and write which actions those users can perform throught the access point like put, get etc.
 
 An **AWS S3 Access Point** is a **customized endpoint** that you can create to **manage access** to an S3 bucket in a **more controlled and scalable way**. Instead of directly using a bucket name, you create **multiple access points** with unique policies to control how different applications or teams access the same bucket.

@@ -1,4 +1,5 @@
 Topics:
+
 1. Health Checks
 2. Types of Load balancer
 3. Load Balancer Security Group
@@ -7,6 +8,7 @@ Topics:
 6. Load Balacancer SSL certificate
 7. SSL SNI(Service Name Indication)
 8. Connection draining
+9. Load Balancer policies
 
 
 ![[Pasted image 20241209161354.png]]
