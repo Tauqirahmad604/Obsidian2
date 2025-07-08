@@ -58,6 +58,7 @@
 
 ![[Pasted image 20250101220255.png]]
 
+It **translates** the private IP of the instance to its own public IP for outbound traffic.
 
 ![[Pasted image 20250101222525.png]]
 
