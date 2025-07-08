@@ -25,7 +25,7 @@ If we do not want to attach default service account to our pod.
 5. How you can give access you deployment to the any service running on aws.(using addon)
 6. EKS Pod Identity and IRSA
 7. Metrics Server
-8. 
+8. what is raf inside etcd of kubernetes
 
 
 
