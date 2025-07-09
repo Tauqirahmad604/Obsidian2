@@ -1,4 +1,4 @@
-
+I have created vpc with /30 cidr what will happen?
 
 
 ![[Pasted image 20250101192921.png]]
