@@ -79,5 +79,5 @@ SSh = ssh ualimaan@20.21.144.95
 
 docker tag bedrock:latest us-west2-docker.pkg.dev/capzula/capzula-repo/bedrock:latest
 
-docker push us-west2-docker.pkg.dev/capzula/capzula-repo/bedrock:latest
+docker push us-west2-docker.pkg.dev/capzula/capzula-repo/bedrock:latest  
 
