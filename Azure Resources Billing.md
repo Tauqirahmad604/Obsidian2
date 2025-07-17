@@ -7,3 +7,6 @@
 
 4. Click on resources group there
 5.  
+
+u
+g
