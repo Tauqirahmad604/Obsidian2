@@ -6,4 +6,4 @@
 ![[Pasted image 20240626185653.png]]
 
 4. Click on resources group there
-5. 
+5.  
