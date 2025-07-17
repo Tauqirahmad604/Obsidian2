@@ -81,3 +81,6 @@ docker tag bedrock:latest us-west2-docker.pkg.dev/capzula/capzula-repo/bedrock:l
 
 docker push us-west2-docker.pkg.dev/capzula/capzula-repo/bedrock:latest  
 
+
+
+
